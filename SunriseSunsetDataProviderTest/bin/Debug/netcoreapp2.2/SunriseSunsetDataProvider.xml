@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SunriseSunsetDataProvider</name>
+    </assembly>
+    <members>
+        <member name="M:SunriseSunsetDataProvider.Controllers.SunriseSunsetController.GetData(System.Int32,System.String)">
+            <summary>
+            取得今年全台某月份日出日落資料
+            </summary>
+            <param name="month">月份</param>
+            <param name="authorizationKey">氣象開放資料平台會員授權碼</param>
+            <returns>日出日落資料</returns>
+        </member>
+        <member name="M:SunriseSunsetDataProvider.Module.Repository.#ctor(System.Data.SqlClient.SqlConnectionStringBuilder)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="connectionInfo"></param>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Repository.ConnectionInformation">
+            <summary>
+            連線資訊
+            </summary>
+        </member>
+        <member name="T:SunriseSunsetDataProvider.VariableClasses.SqlConnectionInfo">
+            <summary>
+            資料庫連線資訊
+            </summary>
+        </member>
+        <member name="P:SunriseSunsetDataProvider.VariableClasses.SqlConnectionInfo.DataSource">
+            <summary>
+            資料庫IP位址
+            </summary>
+        </member>
+        <member name="P:SunriseSunsetDataProvider.VariableClasses.SqlConnectionInfo.ApplicationName">
+            <summary>
+            來源應用程式名稱
+            </summary>
+        </member>
+        <member name="P:SunriseSunsetDataProvider.VariableClasses.SqlConnectionInfo.InitialCatalog">
+            <summary>
+            資料庫名稱
+            </summary>
+        </member>
+    </members>
+</doc>

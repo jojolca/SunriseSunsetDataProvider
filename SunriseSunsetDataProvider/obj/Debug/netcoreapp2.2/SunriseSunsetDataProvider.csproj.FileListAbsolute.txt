@@ -1,0 +1,15 @@
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\bin\Debug\netcoreapp2.2\SunriseSunsetDataProvider.deps.json
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\bin\Debug\netcoreapp2.2\SunriseSunsetDataProvider.runtimeconfig.json
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\bin\Debug\netcoreapp2.2\SunriseSunsetDataProvider.runtimeconfig.dev.json
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\bin\Debug\netcoreapp2.2\SunriseSunsetDataProvider.dll
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.csprojAssemblyReference.cache
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.csproj.CoreCompileInputs.cache
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.RazorAssemblyInfo.cache
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.RazorAssemblyInfo.cs
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.AssemblyInfoInputs.cache
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.AssemblyInfo.cs
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.RazorTargetAssemblyInfo.cache
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\bin\Debug\netcoreapp2.2\SunriseSunsetDataProvider.pdb
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.dll
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\obj\Debug\netcoreapp2.2\SunriseSunsetDataProvider.pdb
+C:\Users\user1\source\repos\SunriseSunsetDataProvider\SunriseSunsetDataProvider\bin\Debug\netcoreapp2.2\SunriseSunsetDataProvider.xml
