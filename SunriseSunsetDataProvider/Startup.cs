@@ -34,6 +34,9 @@ namespace SunriseSunsetDataProvider
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             var connectionData = Configuration.GetSection("SunriseAndSunsetDataDB").Get<SqlConnectionInfo>();
 
+            ILog log = new Logger(Configuration.GetValue<string>("LogPath"));
+            services.AddSingleton(log);
+
             IRepositoryOperater repository = new Repository(connectionData.GetSqlConnectionStringBuilder());
             services.AddSingleton(repository);
 
@@ -73,7 +76,7 @@ namespace SunriseSunsetDataProvider
             }
 
             app.UseHttpsRedirection();
-           
+            app.UseRequestLog();
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

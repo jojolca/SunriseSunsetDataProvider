@@ -12,6 +12,13 @@
             <param name="authorizationKey">氣象開放資料平台會員授權碼</param>
             <returns>日出日落資料</returns>
         </member>
+        <member name="M:SunriseSunsetDataProvider.Interface.ILog.AddLog(System.String,System.String)">
+            <summary>
+            加入本地端log
+            </summary>
+            <param name="content"></param>
+            <param name="dirName"></param>
+        </member>
         <member name="M:SunriseSunsetDataProvider.Module.Repository.#ctor(System.Data.SqlClient.SqlConnectionStringBuilder)">
             <summary>
             Constructor
@@ -21,6 +28,18 @@
         <member name="F:SunriseSunsetDataProvider.Module.Repository.ConnectionInformation">
             <summary>
             連線資訊
+            </summary>
+        </member>
+        <member name="M:SunriseSunsetDataProvider.Module.RequestLogMiddleWearExtension.UseRequestLog(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            自定義的中介層log
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SunriseSunsetDataProvider.Module.RequestLogMiddleWearExtension.RequestLogMiddleware">
+            <summary>
+            中介層的主體
             </summary>
         </member>
         <member name="T:SunriseSunsetDataProvider.VariableClasses.SqlConnectionInfo">

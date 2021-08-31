@@ -12415,11 +12415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj",
       "projectName": "SunriseSunsetDataProvider",
-      "projectPath": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj",
+      "projectPath": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

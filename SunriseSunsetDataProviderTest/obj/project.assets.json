@@ -7635,11 +7635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProviderTest\\SunriseSunsetDataProviderTest.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProviderTest\\SunriseSunsetDataProviderTest.csproj",
       "projectName": "SunriseSunsetDataProviderTest",
-      "projectPath": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProviderTest\\SunriseSunsetDataProviderTest.csproj",
+      "projectPath": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProviderTest\\SunriseSunsetDataProviderTest.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProviderTest\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProviderTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7659,8 +7659,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj": {
-              "projectPath": "C:\\Users\\user1\\source\\repos\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj"
+            "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj": {
+              "projectPath": "C:\\Users\\user1\\Desktop\\新增資料夾\\新增資料夾\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider\\SunriseSunsetDataProvider.csproj"
             }
           }
         }

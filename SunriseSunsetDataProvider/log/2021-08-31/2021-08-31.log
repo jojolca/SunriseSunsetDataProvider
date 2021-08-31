@@ -1,0 +1,16 @@
+﻿[2021-08-31],{"Action":"/swagger/index.html","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":200,\"ClientIp\":\"::1\"}","Message":"","Success":true,"Cost":278}
+
+[2021-08-31],{"Action":"/swagger/swagger-ui-standalone-preset.js","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":200,\"ClientIp\":\"::1\"}","Message":"","Success":true,"Cost":125}
+
+[2021-08-31],{"Action":"/swagger/swagger-ui.css","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":200,\"ClientIp\":\"::1\"}","Message":"","Success":true,"Cost":126}
+
+[2021-08-31],{"Action":"/swagger/swagger-ui-bundle.js","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":200,\"ClientIp\":\"::1\"}","Message":"","Success":true,"Cost":153}
+
+[2021-08-31],{"Action":"/swagger/swagger-ui-standalone-preset.js.map","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":404,\"ClientIp\":\"127.0.0.1\"}","Message":"","Success":false,"Cost":2}
+
+[2021-08-31],{"Action":"/swagger/swagger-ui-bundle.js.map","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":404,\"ClientIp\":\"127.0.0.1\"}","Message":"","Success":false,"Cost":0}
+
+[2021-08-31],{"Action":"/swagger/v1/swagger.json","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":200,\"ClientIp\":\"::1\"}","Message":"","Success":true,"Cost":183}
+
+[2021-08-31],{"Action":"/SunriseSunsetData/3/CWB-D863B468-BF22-4C62-AB33-7D4F3875794F","Info":"{\"MemberId\":0,\"AppId\":0,\"Method\":\"GET\",\"QueryValue\":\"\",\"FormValue\":\"\",\"StatusCode\":200,\"ClientIp\":\"::1\"}","Message":"","Success":true,"Cost":1229}
+
