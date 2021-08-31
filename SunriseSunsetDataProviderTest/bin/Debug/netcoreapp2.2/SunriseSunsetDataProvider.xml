@@ -19,6 +19,60 @@
             <param name="content"></param>
             <param name="dirName"></param>
         </member>
+        <member name="M:SunriseSunsetDataProvider.Module.Logger.#ctor(System.String)">
+            <summary>
+            建構子
+            </summary>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Logger.writeLogTimer">
+            <summary>
+            寫log的timer
+            </summary>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Logger.logsNeedToWrite">
+            <summary>
+            需要被寫入的log
+            </summary>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Logger.RECORD_INTERVAL">
+            <summary>
+            間隔1秒
+            </summary>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Logger.MAX_ROWS_OF_WRITE_TO_LOGFILE">
+            <summary>
+            最大批次寫入資料筆數(先設10000筆看看)
+            </summary>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Logger.rootName">
+            <summary>
+            放Log的根資料夾
+            </summary>
+        </member>
+        <member name="F:SunriseSunsetDataProvider.Module.Logger.writerOfELK">
+            <summary>
+            ELK發生錯誤時的寫檔物件
+            </summary>
+        </member>
+        <member name="M:SunriseSunsetDataProvider.Module.Logger.AddLog(System.String,System.String)">
+            <summary>
+            增加log
+            </summary>
+            <param name="content">log內容</param>
+             <param name="dirName">資料夾名稱</param>
+        </member>
+        <member name="M:SunriseSunsetDataProvider.Module.Logger.writeLog">
+            <summary>
+            寫log
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:SunriseSunsetDataProvider.Module.Logger.timerWriteLog(System.Object)">
+            <summary>
+            寫log的timer工作內容
+            </summary>
+            <param name="item"></param>
+        </member>
         <member name="M:SunriseSunsetDataProvider.Module.Repository.#ctor(System.Data.SqlClient.SqlConnectionStringBuilder)">
             <summary>
             Constructor

@@ -24,51 +24,22 @@ namespace SunriseSunsetDataProvider.Model
 
         public async Task<(bool isSuccess, string result)> GetData(int month, string authorizationKey)
         {
+            var totalDays = DateTime.DaysInMonth(DateTime.Now.Year, month);
             var firstDay = new DateTime(DateTime.Now.Year, month, 1);
-            var lastDays = firstDay.AddMonths(1);
-            var totalDays = lastDays.Subtract(firstDay).TotalDays;
+            var lastDays = new DateTime(DateTime.Now.Year, month, totalDays);
 
             try
             {
                 var data = await Repository.Get(firstDay, lastDays);
                 if (data != null && data.Count() > 0)
                 {
-                    List<SunRiseAndSunsetData> newData = new List<SunRiseAndSunsetData>();
-                    var lackSomeData = data.GroupBy(x => x.City).Where(info => info.Count() < totalDays).ToDictionary(info => info.Key, value => value.Max(info => info.Date));                    
-                    if (lackSomeData.Count() > 0)//詢問剩餘的天數的資料
-                    {
-                        foreach (var kv in lackSomeData)
-                        {
-                            firstDay = kv.Value.AddDays(1);
-                            var openData = await OpenDataOperater.GetData(firstDay.ToString("yyyy-MM-dd"), lastDays.ToString("yyyy-MM-dd"), authorizationKey, kv.Key);
-                            newData.AddRange(openData);
-                            data = data.Concat(openData);
-                        }
-                       
-                        var result = TransToCSVFormat(data.OrderBy(x => x.City).ThenBy(x => x.Date));
-                        if (await Repository.Insert(newData, 2))
-                        {
-                            return (true, result);
-                        }
-                        else
-                        {
-                            return (false, $"寫入{firstDay.ToString("yyyy-MM-dd")}~{lastDays.ToString("yyyy-MM-dd")}資料庫失敗!");
-                        }
-                        
-                    }
-                    else if(lackSomeData.Count() == 0)//資料已存在
-                    {
-                        var result = TransToCSVFormat(data);
-                        return (true, result);
-                    }
-                    else
-                    {
-                        return (false, "資料庫資料有誤!");
-                    }
+                    var result = TransToCSVFormat(data);
+                    return (true, result);
                 }
                 else //完全沒有資料
                 {
-                    var newData = await OpenDataOperater.GetData(firstDay.ToString("yyyy-MM-dd"), lastDays.ToString("yyyy-MM-dd"), authorizationKey, string.Empty);
+                    //氣象局撈資料有bug... lastDay如果是月底最後一天，只會回到月底前一天的資料
+                    var newData = await OpenDataOperater.GetData(firstDay.ToString("yyyy-MM-dd"), lastDays.AddDays(1).ToString("yyyy-MM-dd"), authorizationKey, string.Empty);
                     var result = TransToCSVFormat(newData);
                     if (await Repository.Insert(newData, 2))
                     {

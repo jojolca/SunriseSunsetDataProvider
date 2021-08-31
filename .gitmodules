@@ -1,0 +1,3 @@
+[submodule "EcommerceDataSource"]
+	path = EcommerceDataSource
+	url = ../EcommerceDataSource.git

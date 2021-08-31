@@ -56,22 +56,7 @@ namespace SunriseSunsetDataProviderTest
 
             Assert.False(result.isSuccess);
         }
-
-        [Fact]
-        public async void InsertPartialNewDataSuccess()
-        {
-            var fackData = new SunRiseAndSunsetData() { City = "Test", Date = DateTime.Now.AddDays(1), JsonData = "[{ \"ParameterName\":\"民用曙光始\",\"ParameterValue\":\"05:33\"},{ \"ParameterName\":\"日出時刻\",\"ParameterValue\":\"05:57\"},{ \"ParameterName\":\"方位\",\"ParameterValue\":\"103\"},{ \"ParameterName\":\"過中天\",\"ParameterValue\":\"11:37\"},{ \"ParameterName\":\"仰角\",\"ParameterValue\":\"53S\"},{ \"ParameterName\":\"日沒時刻\",\"ParameterValue\":\"17:17\"},{ \"ParameterName\":\"方位\",\"ParameterValue\":\"257\"},{ \"ParameterName\":\"民用暮光終\",\"ParameterValue\":\"17:40\"}]" };
-            DataService = new DataService(repository.Object, openData.Object);
-            repository.Setup(x => x.Get(It.IsAny<DateTime>(), It.IsAny<DateTime>())).ReturnsAsync(new SunRiseAndSunsetData[] { fackData });
-            repository.Setup(x => x.Insert(It.IsAny<IEnumerable<SunRiseAndSunsetData>>(), It.IsAny<int>())).ReturnsAsync(true);
-            var newData = new SunRiseAndSunsetData[] { new SunRiseAndSunsetData() { City = "Test", Date = DateTime.Now, JsonData = "[{ \"ParameterName\":\"民用曙光始\",\"ParameterValue\":\"05:33\"},{ \"ParameterName\":\"日出時刻\",\"ParameterValue\":\"05:57\"},{ \"ParameterName\":\"方位\",\"ParameterValue\":\"103\"},{ \"ParameterName\":\"過中天\",\"ParameterValue\":\"11:37\"},{ \"ParameterName\":\"仰角\",\"ParameterValue\":\"53S\"},{ \"ParameterName\":\"日沒時刻\",\"ParameterValue\":\"17:17\"},{ \"ParameterName\":\"方位\",\"ParameterValue\":\"257\"},{ \"ParameterName\":\"民用暮光終\",\"ParameterValue\":\"17:40\"}]" } };
-            openData.Setup(x => x.GetData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).ReturnsAsync(newData);
-
-            var result = await DataService.GetData(12, "Test-Token");
-            Assert.True(result.isSuccess);
-
-        }
-
+        
         [Fact]
         public async void GetExsistDataSuccess()
         {
